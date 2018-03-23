@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.meesh.lab10.MainActivity">
+
+<Button
+    android:id="@+id/frag1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Fragment 1"/>
+
+    <Button
+        android:id="@+id/frag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/frag1"
+        android:layout_toRightOf="@+id/frag1"
+        android:text="Fragment 2" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="700dp"
+        android:layout_height="1000dp"
+        android:layout_below="@+id/frag2"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+
+</RelativeLayout>
